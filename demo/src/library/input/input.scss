@@ -1,0 +1,74 @@
+@import '~styles/variables';
+
+.input-container {
+    font-size: 1rem;
+    position: relative;
+
+    .input {
+        font-size: 1.2em;
+
+        input {
+            width: 100%;
+            padding: 0.4em 2.2em 0.4em 0.8em;
+            border: 0.1em solid $primary-border-color;
+            outline: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &.ellipsis {
+            .k-textbox {
+                padding-right: 2em !important;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .input-icon {
+            position: absolute;
+            right: 0.6em;
+            top: 0.5em;
+            line-height: 1.5em;
+            color: #7a7a7a;
+            cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+            &.pre {
+                right: 2.2em;
+                color: $input-placeholder-color;
+            }
+
+            svg {
+                width: 1.45em !important;
+            }
+        }
+    }
+
+    &.small {
+        width: 15em;
+    }
+
+    &.medium {
+        width: 20em;
+    }
+
+    &.large {
+        width: 25em;
+    }
+}
+
+.no-value {
+    input,
+    select,
+    .k-input,
+    .k-autocomplete,
+    .k-dropdown,
+    .k-dropdown-wrap .k-input,
+    .k-maskedtextbox .k-textbox {
+        color: $input-placeholder-color !important;
+    }
+}

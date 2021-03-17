@@ -1,0 +1,115 @@
+@import '~styles/variables';
+
+.drop-down {
+    font-size: 1rem;
+    position: relative;
+
+    &.hide-no-data {
+        .control {
+            .drop-down-container {
+                border: none;
+            }
+        }
+    }
+
+    .control {
+        font-size: 1em;
+        .drop-down-input {
+            font-size: 1.2em;
+
+            .pre {
+                color: transparent;
+                &:hover {
+                    color: $input-placeholder-color;
+                }
+            }
+        }
+    }
+}
+
+.drop-down-container {
+    font-size: 1.3rem;
+    border: 0.1em solid $input-border-color;
+    border-radius: 0.4em;
+    margin-top: 0.44834em;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2000;
+
+    &.open-top {
+        margin-top: -0.44834em;
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 0;
+    }
+
+    .custom-scrollbar-container {
+        width: 100% !important;
+
+        ul {
+            li {
+                padding: 0em 1em;
+                border-bottom: 0.1em solid $input-border-light-color;
+                line-height: 2.3em;
+                &:last-child {
+                    border-bottom: none;
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: $input-selection-hover-background-color;
+                    color: $primary-highlight-color;
+                }
+                &.selected {
+                    color: $primary-highlight-color;
+                }
+                &.no-data {
+                    text-align: center;
+                    cursor: default;
+                    line-height: 0;
+                    padding: 1.5em;
+                    &:hover {
+                        background-color: $primary-background-color;
+                        color: $input-text-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        padding: 0.5em 0.7em;
+        input {
+            height: 2em !important;
+        }
+    }
+    .footer {
+        padding: 0.5em 1em;
+        background-color: $secondary-content-background-color;
+        border-top: 0.1em solid $input-border-color;
+        ul {
+            cursor: pointer;
+            li {
+                cursor: pointer;
+                .link {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.drop-down-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1999;
+}

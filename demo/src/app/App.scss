@@ -1,0 +1,27 @@
+@media screen and (max-width: 1299px) {
+    html {
+        font-size: 8px !important;
+    }
+}
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
+    /* Note value font-size: 10px is used for resolution 1366*768
+         * For other resolution we need to relatively increase/decrease value accordingly
+         * For each component use parent font-size as 1rem -> rem ref. to main HTML document element
+         */
+    html {
+        font-size: 10px !important;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1900px) {
+    html {
+        font-size: 11px !important;
+    }
+}
+html {
+    body {
+        background-color: $body-background-color;
+        .app {
+            font-size: 10px;
+        }
+    }
+}

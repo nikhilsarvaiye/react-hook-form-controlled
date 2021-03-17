@@ -1,0 +1,58 @@
+@import '~styles/variables';
+
+.date-picker {
+    .ant-picker {
+        height: 0;
+        width: 100%;
+        line-height: 0;
+        visibility: hidden;
+        display: block;
+        padding: 0;
+        font-size: 0;
+    }
+}
+
+.ant-picker-dropdown {
+    color: $date-picker-color;
+
+    .ant-picker-panel {
+        &.ant-picker-panel-focused {
+            border: 0.1em solid $input-border-focus-color;
+        }
+        border: 0.1em solid $input-border-color;
+        box-shadow: 0 0 0 0.1rem $input-border-color;
+        border-radius: 0.4em !important;
+    }
+
+    .ant-picker-content th {
+        font-weight: 600;
+    }
+
+    .ant-picker-header-view button {
+        color: $date-picker-heading-color;
+    }
+
+    .ant-picker-cell-in-view {
+        &:hover,
+        &.ant-picker-cell-selected,
+        &.ant-picker-cell-range-start,
+        &.ant-picker-cell-range-end {
+            .ant-picker-cell-inner {
+                background: $date-picker-highlight-color;
+                border-radius: 1em;
+            }
+        }
+    }
+
+    .ant-picker-cell-in-view.ant-picker-cell-today
+        .ant-picker-cell-inner::before {
+        border-radius: 1em;
+    }
+
+    .ant-picker-header-super-prev-btn,
+    .ant-picker-header-prev-btn,
+    .ant-picker-header-next-btn,
+    .ant-picker-header-super-next-btn {
+        color: $date-picker-arrow-color;
+    }
+}

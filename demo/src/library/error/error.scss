@@ -1,0 +1,14 @@
+@import '~styles/variables';
+
+.error {
+    font-size: 1rem;
+
+    ul {
+        font-size: 1.3em;
+        color: $error-text-color;
+
+        li {
+            text-align: left;
+        }
+    }
+}

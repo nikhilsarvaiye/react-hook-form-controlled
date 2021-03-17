@@ -1,0 +1,173 @@
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$primary-body-background-color: #e5e5e5;
+$secondary-body-background-color: #ffffff;
+$primary-content-background-color: #e3e6e8;
+$secondary-content-background-color: #f1f3f5;
+
+$primary-content-text-color: #5a5a5b;
+
+$transitionAnimation: cubic-bezier(0.4, 0, 1, 1);
+$color42: #424242;
+
+$body-background-color: #f3f4f7;
+$primary-color: #1890ff;
+$primary-heading-color: #1890ff;
+$primary-background-color: #ffffff;
+$primary-border-color: #d2d2d2; // #b9b9b9;
+$primary-highlight-color: #e34850;
+
+// general
+$error-text-color: $primary-highlight-color;
+$error-background-color: #fffbfb;
+$error-box-shadow-color: #f7ccd0;
+$error-border-color: $error-text-color;
+
+// layout
+$top-nav-height: 4.8em;
+$side-nav-width: 10rem;
+// nice colors
+// #64c3d1 - light blue
+// #fbc02d - yellow
+// #98b433 - light green
+// #9785c2 - light purple
+// #f9ead8 - light red selection color
+// #f16987 - perfect pink
+
+// theme
+$theme-blue-primary-color: #2986ce;
+$theme-blue-secondary-color: #46599b;
+$theme-blue-background-image: linear-gradient(
+    to right,
+    $theme-blue-primary-color,
+    $theme-blue-secondary-color
+);
+$theme-red-primary-color: #b64f79;
+$theme-red-secondary-color: #713a6e;
+$theme-red-background-image: linear-gradient(
+    to right,
+    $theme-red-primary-color,
+    $theme-red-secondary-color
+);
+$theme-green-primary-color: #5ca177;
+$theme-green-secondary-color: #3e6d76;
+$theme-green-background-image: linear-gradient(
+    to right,
+    $theme-green-primary-color,
+    $theme-green-secondary-color
+);
+$theme-purple-primary-color: #76618b;
+$theme-purple-secondary-color: #494562;
+$theme-purple-background-image: linear-gradient(
+    to right,
+    $theme-purple-primary-color,
+    $theme-purple-secondary-color
+);
+$theme-yellow-primary-color: #e1983d;
+$theme-yellow-secondary-color: #b87249;
+$theme-yellow-background-image: linear-gradient(
+    to right,
+    $theme-yellow-primary-color,
+    $theme-yellow-secondary-color
+);
+
+// form
+$form-padding: 2.3em 1.7em 1.7em;
+
+// tab
+$tab-background-color: #f1f3f5;
+$tab-padding: $form-padding !important;
+
+// top nav
+$top-nav-text-color: #5d5d5d;
+$panel-heading-text-color: #404040; //#5d5d5d
+$panel-heading-background-color: #fafafa;
+$panel-body-color: #f1f3f5;
+$panel-body-text-color: #717272;
+$panel-border-color: $primary-border-color;
+$panel-icon-text-color: #7b7b7b;
+
+// Button
+$button-default-color: #fff;
+$button-default-background-color: #949494;
+$button-default-disabled-color: #b3cbe7;
+$button-primary-background-color: #5e9acf;
+$button-primary-hover-background-color: #0e4472;
+$button-primary-focus-background-color: #235a8b;
+$button-secondary-background-color: #949494;
+$button-secondary-hover-background-color: #343434;
+$button-secondary-focus-background-color: #535353;
+$button-tertiary-color: #0857b2;
+$button-tertiary-border-color: #0656b1;
+$button-quaternary-color: #1f67b8;
+$button-quaternary-background-color: #d5dfed;
+$button-quaternary-border-color: #bdcee2;
+
+// Button theme
+$button-primary-background-color: #1890ff;
+$button-primary-hover-background-color: #1834ff;
+$button-primary-focus-background-color: #1854ff;
+$button-secondary-background-color: #868686;
+$button-secondary-hover-background-color: #343434;
+$button-secondary-focus-background-color: #535353;
+$button-tertiary-color: $button-primary-background-color;
+$button-tertiary-border-color: $button-primary-background-color;
+$button-quaternary-danger-background-color: #f53939;
+$button-quaternary-danger-border-color: #f53939;
+$button-quaternary-danger-color: #f53939;
+$button-quaternary-danger-hover-background-color: #f53939;
+
+// Label
+$label-link-color: #0656b1; // #065681
+
+// checkbox
+$checked-background-color: #fff;
+$checked-color: #0756b1;
+$checked-border-color: $primary-border-color;
+
+// Input
+$input-background-color: $secondary-body-background-color;
+$input-placeholder-color: #c5c5c5;
+$input-border-color: #bbbbbb;
+$input-background-focus-color: #e9eef3;
+$input-border-focus-color: #77a1d2;
+$input-box-shadow-focus-color: rgba(0, 123, 255, 0.5);
+$input-text-color: #404040;
+$input-border-light-color: #e0e0e0;
+$input-selection-hover-background-color: #f1f1f1;
+
+// modal
+$modal-color: #000;
+$modal-background-color: #fff;
+$modal-hover-btn-background-color: #5e9acf;
+$modal-border-color: #bbb;
+$color-404040: '#404040';
+$color-ffffff: '#ffffff';
+$color-949494: '#949494';
+
+// Date-Picker
+$date-picker-color: #515151;
+$date-picker-heading-color: #3576bf;
+$date-picker-highlight-color: #5e9acf;
+$date-picker-arrow-color: #474747;
+
+//dropdown
+$dropdown-selected-item-color: #dd7184;
+
+// Note
+$note-background-color: $primary-content-background-color;
+$note-border-color: #bbbbbb;
+
+// Table
+$table-background-color: $secondary-body-background-color;
+$table-text-color: #404040; // #696969;
+$table-header-text-color: #474747;
+$table-header-background-color: $secondary-body-background-color;
+$table-row-border-color: #d6d6d6; // #e8e8e8;
+$table-drag-color: #235a8b;
+$table-column-resize-border-color: #e5e5e5;
+
+// Pagination
+$pagination-active-text-color: #2680eb;

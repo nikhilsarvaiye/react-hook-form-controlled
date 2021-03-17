@@ -1,0 +1,9 @@
+id equals query
+https://localhost:5001/product?$select=id,name&$filter=id%20in%20(%276047fa780d6028fe9fccd630%27,%27CustomId%27)&$top=20
+
+startswith, contains and in query
+https://localhost:5001/product?$select=id,name&$filter=((id%20in%20(%276047fa780d6028fe9fccd630%27,%27CustomId%27))%20and%20(((startswith(name,%27c%27))%20or%20(contains(name,%27p%27)))))&$top=20
+
+https://localhost:5001/product?$orderby=id%20desc&$count=true&$top=10&$skip=0
+
+https://localhost:5001/product?$select=id,name&$filter=id%20eq%20%276047fa780d6028fe9fccd630%27
