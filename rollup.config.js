@@ -3,8 +3,6 @@ import sass from 'rollup-plugin-sass';
 import typescript from 'rollup-plugin-typescript2';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import generatePackageJson from 'rollup-plugin-generate-package-json';
-// import commonjs from '@rollup/plugin-commonjs';
-// import flatDts from 'rollup-plugin-flat-dts';
 
 // import _package from './package.json'; // instead of '@rollup/plugin-json
 // _package.main -> refers to 'main' entry in package.json file

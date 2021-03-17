@@ -33,7 +33,7 @@ export interface IFormUseFieldArrayMethods
 export interface IForm extends UseFormMethods {
     defaultValues: any;
     validationSchema: any;
-    formHandlers: IFormHandler;
+    formHandler: IFormHandler;
     submitForm: () => void;
     resetForm: () => void;
     resetFormArray: (values: any) => void;
@@ -50,7 +50,7 @@ export const useForm = (formConfiguration: IFormConfiguration): IForm => {
         Array.isArray(formConfiguration.handlers)
             ? formConfiguration.handlers
             : [],
-    );
+    ) as IFormHandler;
     formConfiguration.defaultValues = formHandler.onInitializing(
         formConfiguration.defaultValues,
     );
@@ -77,6 +77,7 @@ export const useForm = (formConfiguration: IFormConfiguration): IForm => {
         defaultValues: formConfiguration.defaultValues || {},
         validationSchema: formConfiguration.validationSchema,
         handlers: formConfiguration.handlers,
+        formHandler: formHandler,
     } as IForm;
 
     form.submitForm = () => {
@@ -93,7 +94,7 @@ export const useForm = (formConfiguration: IFormConfiguration): IForm => {
 
     const reset = (values: any) => {
         reactHookForm.reset(values);
-        values = formHandler.onResetting(values, reactHookForm);
+        values = formHandler.onResetting(values, form);
         if (formConfiguration.onReset) {
             formConfiguration.onReset(values, form);
         }
@@ -161,7 +162,7 @@ export const Form = ({ form, style, children }: IFormProps) => {
 
     useEffect(() => {
         const onReady = async () => {
-            await form.formHandlers.onReady(form.defaultValues, form);
+            await form.formHandler.onReady(form.defaultValues, form);
         };
         onReady();
         // registerNonControlFields();

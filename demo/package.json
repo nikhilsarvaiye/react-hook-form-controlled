@@ -18,6 +18,7 @@
         "react": "^17.0.1",
         "react-custom-scrollbars": "^4.2.1",
         "react-dom": "^17.0.1",
+        "react-fully": "file:../../react-fully/dist",
         "react-hook-form-controlled": "file:../dist",
         "react-scripts": "4.0.1",
         "typescript": "^4.0.3",
